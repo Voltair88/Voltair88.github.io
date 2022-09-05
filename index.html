@@ -4,10 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Welcome</title>
   </head>
+  <script>
+    document.querySelector("body").addEventListener("mousemove", eyeball);
+    function eyeball() {
+      var eye = document.querySelectorAll(".eye");
+      eye.forEach(function (eye) {
+        let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+
+        let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rot = radian * (180 / Math.PI) * -1 + 270;
+        eye.style.transform = "rotate(" + rot + "deg)";
+      });
+    }
+  </script>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
   <body>
-    <h1>Welcome to my test site!</h1>
-    <p>Here you can find some of my projects.</p>
+    <h1 class="title">Welcome to my test site!</h1>
+    <p>this is a test site</p>
   </body>
 </html>
