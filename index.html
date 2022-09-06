@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Welcome</title>
-  </head>
-  <script>
-    document.querySelector("body").addEventListener("mousemove", eyeball);
-    function eyeball() {
-      var eye = document.querySelectorAll(".eye");
-      eye.forEach(function (eye) {
-        let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
 
-        let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
-        let radian = Math.atan2(event.pageX - x, event.pageY - y);
-        let rot = radian * (180 / Math.PI) * -1 + 270;
-        eye.style.transform = "rotate(" + rot + "deg)";
-      });
-    }
-  </script>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <body>
-    <h1 class="title">Welcome to my test site!</h1>
-    <p>this is a test site</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Welcome</title>
+</head>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<body>
+  <h1 class="title">Welcome to my test site!</h1>
+  <p>this is a test site</p>
+  <div class="card-container">
+    <div class="card">
+      <a href="about.html">
+        <image src="./images/arena.jpg" alt="arena" />
+        <h2>
+          Arena
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta pariatur consequatur quae hic explicabo
+          facilis distinctio neque. Maiores, dignissimos. Repellendus.</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="about.html">
+        <image src="./images/home.jpg" alt="home" />
+        <h2>
+          Home
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta pariatur consequatur quae hic explicabo
+          facilis distinctio neque. Maiores, dignissimos. Repellendus.</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="about.html">
+        <image src="./images/mountain.jpg" alt="mountain" />
+        <h2>
+          Mountain
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta pariatur consequatur quae hic explicabo
+          facilis distinctio neque. Maiores, dignissimos. Repellendus.</p>
+      </a>
+    </div>
+  </div>
+</body>
+
 </html>
