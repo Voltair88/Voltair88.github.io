@@ -47,7 +47,31 @@
     <a class="slider-btn next" onclick="setSlides(1)">❯</a>
 </div>
   <script src="swiper.js"></script>
+  <div class="tiktaktoe">
+    <div class="row">
+      <div class="cell" onclick="cellClicked(this)" id="cell-0"></div>
+      <div class="cell" onclick="cellClicked(this)" id="cell-1"></div>
+      <div class="cell" onclick="cellClicked(this)" id="cell-2"></div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="cellClicked(this)" id="cell-3"></div>
+      <div class="cell" onclick="cellClicked(this)" id="cell-4"></div>
+      <div class="cell" onclick="cellClicked(this)" id="cell-5"></div>
+    </div>
+    <div class="row">
+      <div class="cell" onclick="cellClicked(this)" id="cell-6"></div>
+      <div class="cell" onclick="cellClicked(this)" id="cell-7"></div>
+      <div class="cell" onclick="cellClicked(this)" id="cell-8"></div>
+    </div>
+  </div>
+    <div class="winner">
+      <h1 id="winner"></h1>
+      <button class="reset" onclick="reset()">Reset</button>
+    </div>
+  <script src="tiktaktoe.js">
+  </script>
+  </div>
   <footer role="footer">
-  </footer>  
+  </footer>
 </body>
 </html>

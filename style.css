@@ -65,16 +65,10 @@ li a:hover {
     scale: 1.2;
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-      font-size: 1rem;
-  }
-}
-
 /* Swiper */
 
 .images-slideshow {
-    height: 300px;
+    height: 460px;
     max-width: 612px;
     position: relative;
     margin: auto;
@@ -246,8 +240,81 @@ footer p {
     font-size: 12px;
 }
 
+.tiktaktoe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    border: black 1px solid;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.cell {
+  font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 14px;
+}
+
+
+.cell:hover {
+    background-color: lightblue;
+}
+
+.winner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.reset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.reset:hover {
+    color: lightblue;
+}
+
+/* Media Queries */
+
 @media screen and (max-width: 768px) {
   footer {
-display: none;
+    display: none;
+      }
+  nav {
+      font-size: 1rem;
+  }
+  .card {
+    background-color: lightgrey;
+    border: none;
+    box-shadow: none;
   }
 }
