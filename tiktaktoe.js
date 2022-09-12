@@ -1,8 +1,15 @@
-let player = "\u00D7";
+const PlayerX = {
+  icon: "\u00D7",
+  Color: "#dc685a",
+};
+const PlayerO = {
+  icon: "\u25CB",
+  Color: "#ecaf4f",
+};
+
+let player = PlayerX.icon;
 let winner = null;
 let moves = 0;
-let playerX = "#dc685a";
-let playerO = "#ecaf4f";
 let cells = document.getElementsByClassName("cell");
 let winnerText = document.getElementById("winner");
 let resetButton = document.getElementById("reset");
@@ -15,11 +22,12 @@ function cellClicked(cell) {
   if (cell.innerHTML === "") {
     cell.innerHTML = player;
     moves++;
-    cell.style.backgroundColor = player === "\u00D7" ? playerX : playerO;
-    if (player === "○") {
-      player = "\u00D7";
+    cell.style.backgroundColor =
+      player === PlayerX.icon ? PlayerX.Color : PlayerO.Color;
+    if (player === PlayerO.icon) {
+      player = PlayerX.icon;
     } else {
-      player = "○";
+      player = PlayerO.icon;
     }
   }
   checkWinner();
@@ -36,10 +44,12 @@ function checkWinner() {
     checkRow(0, 4, 8) ||
     checkRow(2, 4, 6)
   ) {
-    let winner = player === "\u00D7" ? "○" : "\u00D7";
+    let winner = player === PlayerX.icon ? PlayerO.icon : PlayerX.icon;
+    winnerText.style.display = "flex";
     winnerText.innerHTML = "Player " + winner + " has won!";
     gameEnded = true;
   } else if (moves === 9) {
+    winnerText.style.display = "flex";
     winnerText.innerHTML = "It's a tie!";
     gameEnded = true;
   }
@@ -70,9 +80,10 @@ function reset() {
     cells[i].innerHTML = "";
     cells[i].style.backgroundColor = "white";
   }
-  player = "\u00D7";
+  player = PlayerX.icon;
   winner = null;
   moves = 0;
   gameEnded = false;
+  winnerText.style.display = "none";
   winnerText.innerHTML = "";
 }

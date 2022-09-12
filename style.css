@@ -244,11 +244,11 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    justify-content: flex-start;
+    height: 330px;
+    width: 330px;
+    margin: 20px auto;
     gap: 10px;
-    border: black 1px solid;
 }
 
 .row {
@@ -280,13 +280,23 @@ footer p {
     background-color: lightblue;
 }
 
-.winner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+.winnerwindow {
+    position: relative;
     font-size: 30px;
+}
+
+#winner {
+  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 10;
+  width: 330px;
+  height: 330px;
+  padding: 0px;
+  margin: auto 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .reset {
