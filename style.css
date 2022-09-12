@@ -10,8 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 body {
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-height: 100vh;
+  background-color: #E87351;
 }
 
 body h1 {
@@ -31,39 +34,29 @@ body p {
 /* Navigator */
 
 nav {
-    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
-    border-bottom: black 1px solid;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    background-color: #3C9E82;
+    gap: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   }
 
-li {
-    float: right;
-}
-
-li a, .menu-btn li {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    border-radius: 5%;
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    transition: 0.5s ease all;
-}
-
-li a:hover {
-    color: lightblue;
-    background-color: #111;
-    scale: 1.2;
-}
+    width: 80px;
+    height: 20px;
+    background-color: hsla(22, 100%, 53%, 0.2);
+    color: antiquewhite;
+    padding: 15px;
+    border-radius: 5%;
+  }
 
 /* Swiper */
 
@@ -72,7 +65,6 @@ li a:hover {
     max-width: 612px;
     position: relative;
     margin: auto;
-
 }
 
 .card {
@@ -209,6 +201,7 @@ img {
 }
 
 /* Footer */
+
 footer {
     display: flex;
     position: absolute;
@@ -241,6 +234,7 @@ footer p {
 }
 
 .tiktaktoe {
+    background-color: #FEEADE ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,6 +243,9 @@ footer p {
     width: 330px;
     margin: 20px auto;
     gap: 10px;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 15px;
 }
 
 .row {
@@ -261,28 +258,19 @@ footer p {
 }
 
 .cell {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100px;
     height: 100px;
-    border: 1px solid black;
     font-size: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border-radius: 14px;
-}
-
-
-.cell:hover {
-    background-color: lightblue;
-}
-
-.winnerwindow {
-    position: relative;
-    font-size: 30px;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #a0938c,
+    inset -5px -5px 10px #ffffff;
 }
 
 #winner {
@@ -300,17 +288,25 @@ footer p {
 }
 
 .reset {
+    position: relative;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    width: 100px;
+    height: 50px;
     font-size: 30px;
+    margin-bottom: 100px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 14px;
+    background-color: lightblue;
 }
 
 .reset:hover {
     color: lightblue;
+    background-color: white;
 }
 
 /* Media Queries */

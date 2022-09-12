@@ -78,7 +78,7 @@ function checkRow(a, b, c) {
 function reset() {
   for (let i = 0; i < cells.length; i++) {
     cells[i].innerHTML = "";
-    cells[i].style.backgroundColor = "white";
+    cells[i].style.backgroundColor = "#FEEADE";
   }
   player = PlayerX.icon;
   winner = null;
