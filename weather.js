@@ -1,7 +1,7 @@
-const key = env.KEY;
+const key = config.key;
 let city = "stockholm";
+
 function weather() {
-  console.log("weather function called");
   const url =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
@@ -13,6 +13,7 @@ function weather() {
       return resp.json();
     })
     .then(function (data) {
+      console.log(data);
       drawWeather(data);
     })
     .catch(function () {
