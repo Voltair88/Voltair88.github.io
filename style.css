@@ -16,6 +16,11 @@ body {
   min-height: 100vh;
   background-color: #E87351;
 }
+body:after{
+  content: "";
+  display: block;
+  height: 50px;
+}
 
 body h1 {
     font-size: 2rem;
@@ -289,7 +294,7 @@ footer p {
 
 .reset {
     position: relative;
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,7 +302,6 @@ footer p {
     width: 100px;
     height: 50px;
     font-size: 30px;
-    margin-bottom: 100px;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 14px;
