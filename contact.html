@@ -1,54 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head id="Header">
-    <script src="./components/header.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>contact</title>
-  </head>
-  <nav role="navigation">
-    <script src="./components/navigator.js"></script>
-  </nav>
 
-  <body>
-    <h1 class="title">Contact me</h1>
-    <div class="form-container">
-      <form id="fs-frm" action="https://formspree.io/f/xpznqrwb" method="post">
-        <label for="full-name">Full Name</label>
-        <input
-          type="text"
-          name="name"
-          id="full-name"
-          placeholder="First and Last"
-          required=""
-        />
-        <label for="email-address">Email Address</label>
-        <input
-          type="email"
-          name="_replyto"
-          id="email-address"
-          placeholder="email@domain.tld"
-          required=""
-        />
-        <label for="message">Message</label>
-        <textarea
-          rows="5"
-          maxlength="255"
-          name="message"
-          id="message"
-          placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
-          required=""
-        ></textarea>
-        <input
-          type="hidden"
-          name="_subject"
-          id="email-subject"
-          value="Contact Form Submission"
-        />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-  </body>
-  <footer id="Footer">
-    <script src="./components/footer.js"></script>
-  </footer>
+<head id="Header">
+  <script src="./components/header.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>contact</title>
+</head>
+<nav role="navigation">
+  <script src="./components/navigator.js"></script>
+</nav>
+
+<body>
+  <h1 class="title">Contact me</h1>
+  <div class="form-container">
+    <form id="fs-frm" action="https://formspree.io/f/xpznqrwb" method="post">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="name" id="full-name" placeholder="First and Last" required="" />
+      <label for="email-address">Email Address</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="" />
+      <label for="message">Message</label>
+      <textarea rows="5" maxlength="255" name="message" id="message"
+        placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+        required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+<footer id="Footer">
+  <script src="./components/footer.js"></script>
+</footer>
+
 </html>
