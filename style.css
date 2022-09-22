@@ -44,6 +44,7 @@ nav {
     justify-content: flex-end;
     font-size: 1.5rem;
     text-align: center;
+    height: 3rem;
     padding: 1rem;
     background-color: #3C9E82;
     gap: 1rem;
@@ -67,6 +68,52 @@ nav a:hover {
     background-color: hsla(22, 100%, 53%, 0.6);
     color: antiquewhite;
     transition: 0.2s;
+  }
+
+  /* Weather */
+
+  #weather {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 1rem;
+    background-color: #3C9E82;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+
+  #weather h1 {
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #weather p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  #weather img {
+    margin: 0 1rem;
+  }
+
+  #weather input {
+    width: 150px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  #weather button {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
   }
 
   /* Quiz */

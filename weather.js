@@ -1,7 +1,7 @@
-const key = "af9c50b442a83a45238a1f739f6d219c";
+const key = env.KEY;
 let city = "stockholm";
-
 function weather() {
+  console.log("weather function called");
   const url =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +

@@ -11,8 +11,17 @@
 </nav>
 
 <body>
+  <div id="weather">
+    <img alt="icon" id="icon"></img>
+    <p id="description"></p>
+    <h1 id="temp"></h1>
+    <p id="location"></p>
+    <input type="text" id="city" placeholder="Enter a city"></input>
+    <button id="search">Search</button>
+  </div>
   <h1 class="title">Welcome to my test site!</h1>
-  <div class="quiz">
+
+    <div class="quiz">
     <h2>Quiz</h2>
     <H2 id="results">&nbsp</H2>
     <form name="quiz" onsubmit="return Answers()">
@@ -97,13 +106,13 @@
     </div>
   </div>
   <button class="reset" onclick="reset()">Reset</button>
-
   <script src="tiktaktoe.js">
   </script>
   </div>
-  <footer id="Footer">
-    <script src="./components/footer.js"></script>
-  </footer>
 </body>
-
+<footer id="Footer">
+  <script src="./components/footer.js"></script>
+  <script type="text/javascript" src="./config.js"></script>
+  <script src="./weather.js"></script>
+</footer>
 </html>
