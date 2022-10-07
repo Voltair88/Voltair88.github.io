@@ -4,6 +4,8 @@
 <head id="Header">
   <script src="./components/header.js"></script>
   <link rel="stylesheet" href="style.css" />
+  <script src="weather.js"></script>
+
   <title>Welcome!</title>
 </head>
 <nav role="navigation">
@@ -21,6 +23,11 @@
   </div>
   <h1 class="title">Welcome to my test site!</h1>
 
+  <div id="addlistitem">
+    <input type="text" id="input" placeholder="Enter a task"></input>
+    <button id="addlist">Add</button>
+  </div>
+  <div id="list"></div>
     <div class="quiz">
     <h2>Quiz</h2>
     <H2 id="results">&nbsp</H2>
@@ -84,7 +91,6 @@
     <a class="slider-btn previous" onclick="setSlides(-1)">❮</a>
     <a class="slider-btn next" onclick="setSlides(1)">❯</a>
   </div>
-  <script src="swiper.js"></script>
   <h1>Tic Tac Toe</h1>
 
   <div class="tiktaktoe">
@@ -106,13 +112,12 @@
     </div>
   </div>
   <button class="reset" onclick="reset()">Reset</button>
-  <script src="tiktaktoe.js">
-  </script>
   </div>
 </body>
 <footer id="Footer">
   <script src="./components/footer.js"></script>
-  <script type="text/javascript" src="./config.js"></script>
-  <script src="./weather.js"></script>
+  <script src="tiktaktoe.js"></script>
+  <script src="list.js"></script>
+
 </footer>
 </html>
